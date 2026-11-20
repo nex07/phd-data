@@ -36,7 +36,7 @@ The seed of an episode is the seed base plus the episode index plus a multiple o
 
 ## Training file
 
-`train_2048.h5` holds 2048 episodes of 1000 samples (20 s) with the same file layout as the four sets below. The payload masses are 1, 6, 11 and 15 kg and the excitation families are F0, F1, F3 and F5. The seed base is 1000000, the realised seeds lie between 1000000 and 1014265, and 789 attempts were rejected when a trajectory left the workspace envelope or the velocity limits. The fitting set of 1920 episodes and the selection set of 128 episodes used in the article are carved from this file with the seed 20261105. The seed ranges of the file and of the two development sets do not overlap.
+`train_2048.h5` holds 2048 episodes of 1000 samples (20 s) with the same file layout as the four sets below. The payload masses are 1, 6, 11 and 15 kg and the excitation families are F0, F1, F3 and F5. The seed base is 1000000, the realised seeds lie between 1000000 and 1014265, and 789 attempts were rejected when a trajectory left the workspace envelope or the velocity limits. The fitting set of 1920 episodes and the selection set of 128 episodes used in the article are carved from this file with the seed 20261105. The seed ranges of the file and of the four sets do not overlap.
 
 ## Plant
 
