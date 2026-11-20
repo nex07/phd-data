@@ -1,2 +1,4 @@
 46421a15abd15ae59fa8db1c0e04a2a014eb779b8b9c8b033990bd87444194d9  data/devB_in.h5
 51ba19dbfa7408c5092abc8db00b22bccc40383e472d48c09bf01657f69ec85e  data/devB_ood.h5
+24e7dea3ded330fb1bdba3861acecaf98d17326b01b23e2609e7635f2791b013  data/devC_in.h5
+d5f0cfcff7adc2a72b4177f5494313bc5febab2f7edf14f3f12fe6ad1280de0f  data/devC_ood.h5

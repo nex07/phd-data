@@ -8,6 +8,8 @@ Simulation data of a small overhead crane with a variable rope length and a vari
 |---|---|---|
 | `data/devB_in.h5` | 15072927 | `46421a15abd15ae59fa8db1c0e04a2a014eb779b8b9c8b033990bd87444194d9` |
 | `data/devB_ood.h5` | 15704609 | `51ba19dbfa7408c5092abc8db00b22bccc40383e472d48c09bf01657f69ec85e` |
+| `data/devC_in.h5` | 15085982 | `24e7dea3ded330fb1bdba3861acecaf98d17326b01b23e2609e7635f2791b013` |
+| `data/devC_ood.h5` | 15704584 | `d5f0cfcff7adc2a72b4177f5494313bc5febab2f7edf14f3f12fe6ad1280de0f` |
 
 `MANIFEST.sha256` lists the same checksums in the format of `sha256sum`. To check the files, run `sha256sum -c MANIFEST.sha256` in this folder.
 
@@ -19,20 +21,22 @@ The training file is too large for an ordinary file of the repository (more than
 
 Its checksum is in `RELEASE_ASSETS.sha256`. To check it, download the file into this folder and run `sha256sum -c RELEASE_ASSETS.sha256`.
 
-## What the two sets are
+## What the development sets are
 
-Both sets are development sets. They are made with the same plant and the same generator and differ in the excitation families and in the number of episodes per cell.
+All four sets are development sets. `devB_in` and `devB_ood` are the first pair and `devC_in` and `devC_ood` a second pair with new seed bases. They are made with the same plant and the same generator and differ in the excitation families and in the number of episodes per cell.
 
 | Set | Episodes | Payload masses (kg) | Excitation families | Episodes per mass and family | Seed base |
 |---|---|---|---|---|---|
 | `devB_in` | 256 | 1, 6, 11, 15 | F0, F1, F3, F5 | 16 | 10100000 |
 | `devB_ood` | 256 | 1, 6, 11, 15 | F2, F4 | 32 | 10200000 |
+| `devC_in` | 256 | 1, 6, 11, 15 | F0, F1, F3, F5 | 16 | 10300000 |
+| `devC_ood` | 256 | 1, 6, 11, 15 | F2, F4 | 32 | 10400000 |
 
-The seed of an episode is the seed base plus the episode index plus a multiple of 256 for every rejected attempt. A trajectory is rejected when it leaves the workspace envelope or the velocity limits of the plant. The realised seeds lie between 10100001 and 10101354 for `devB_in` and between 10200000 and 10200740 for `devB_ood`.
+The seed of an episode is the seed base plus the episode index plus a multiple of 256 for every rejected attempt. A trajectory is rejected when it leaves the workspace envelope or the velocity limits of the plant. The realised seeds lie between 10100001 and 10101354 for `devB_in`, between 10200000 and 10200740 for `devB_ood`, between 10300000 and 10301753 for `devC_in` and between 10400001 and 10400730 for `devC_ood`.
 
 ## Training file
 
-`train_2048.h5` holds 2048 episodes of 1000 samples (20 s) with the same file layout as the two development sets below. The payload masses are 1, 6, 11 and 15 kg and the excitation families are F0, F1, F3 and F5. The seed base is 1000000, the realised seeds lie between 1000000 and 1014265, and 789 attempts were rejected when a trajectory left the workspace envelope or the velocity limits. The fitting set of 1920 episodes and the selection set of 128 episodes used in the article are carved from this file with the seed 20261105. The seed ranges of the file and of the two development sets do not overlap.
+`train_2048.h5` holds 2048 episodes of 1000 samples (20 s) with the same file layout as the four development sets below. The payload masses are 1, 6, 11 and 15 kg and the excitation families are F0, F1, F3 and F5. The seed base is 1000000, the realised seeds lie between 1000000 and 1014265, and 789 attempts were rejected when a trajectory left the workspace envelope or the velocity limits. The fitting set of 1920 episodes and the selection set of 128 episodes used in the article are carved from this file with the seed 20261105. The seed ranges of the file and of the two development sets do not overlap.
 
 ## Plant
 
@@ -54,7 +58,7 @@ The attributes of an episode are `m_load` (payload mass in kg), `family` (code 0
 
 ## Use in the article
 
-The two sets are used to score trained models in free run over 20 s. The model starts from the first state of an episode and receives the stored command sequence.
+The sets are used to score trained models in free run over 20 s. The model starts from the first state of an episode and receives the stored command sequence. The article compares two network forms on `devB_in` and repeats the comparison on `devC_in`. The article describes `devB_ood` with descriptive values only, and `devC_ood` was not analysed. Neither out-of-distribution file was used for a decision.
 
 ## Not yet included
 
