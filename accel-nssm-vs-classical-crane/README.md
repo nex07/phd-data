@@ -11,6 +11,14 @@ Simulation data of a small overhead crane with a variable rope length and a vari
 
 `MANIFEST.sha256` lists the same checksums in the format of `sha256sum`. To check the files, run `sha256sum -c MANIFEST.sha256` in this folder.
 
+The training file is too large for an ordinary file of the repository (more than 100 MB) and is attached to the release `train-data-v1` of this repository:
+
+| File | Size in bytes | SHA-256 |
+|---|---|---|
+| `train_2048.h5` (release asset) | 120565481 | `95c8e6f177b1ecafee49b654d7178661795c390a4095cde64545f397fdea625d` |
+
+Its checksum is in `RELEASE_ASSETS.sha256`. To check it, download the file into this folder and run `sha256sum -c RELEASE_ASSETS.sha256`.
+
 ## What the two sets are
 
 Both sets are development sets. They are made with the same plant and the same generator and differ in the excitation families and in the number of episodes per cell.
@@ -21,6 +29,10 @@ Both sets are development sets. They are made with the same plant and the same g
 | `devB_ood` | 256 | 1, 6, 11, 15 | F2, F4 | 32 | 10200000 |
 
 The seed of an episode is the seed base plus the episode index plus a multiple of 256 for every rejected attempt. A trajectory is rejected when it leaves the workspace envelope or the velocity limits of the plant. The realised seeds lie between 10100001 and 10101354 for `devB_in` and between 10200000 and 10200740 for `devB_ood`.
+
+## Training file
+
+`train_2048.h5` holds 2048 episodes of 1000 samples (20 s) with the same file layout as the two development sets below. The payload masses are 1, 6, 11 and 15 kg and the excitation families are F0, F1, F3 and F5. The seed base is 1000000, the realised seeds lie between 1000000 and 1014265, and 789 attempts were rejected when a trajectory left the workspace envelope or the velocity limits. The fitting set of 1920 episodes and the selection set of 128 episodes used in the article are carved from this file with the seed 20261105. The seed ranges of the file and of the two development sets do not overlap.
 
 ## Plant
 
@@ -46,7 +58,7 @@ The two sets are used to score trained models in free run over 20 s. The model s
 
 ## Not yet included
 
-The generator, the plant source and the scoring scripts are not part of this first upload. Additional sets will be added.
+The generator, the plant source and the scoring scripts are not part of this upload. Additional sets will be added.
 
 ## Licence
 
