@@ -101,3 +101,29 @@ The generator, the plant source and the scoring scripts are not part of this upl
 ## Licence
 
 See the file `LICENSE` in the top folder of the repository.
+
+## Matched comparison: time series and results
+
+The folder `matched_comparison` holds the stored outputs that the figures and tables of the matched comparison of the article read. The 12 time-series files (`score96_timeseries/`) hold, for each of the six seeds (11, 21, 41, 51, 61 and 71) of the two networks, the free-run predictions on the 96 scoring episodes of the selection set: the arrays `pred`, `ref` (reference trajectory), `commands`, `mass_kg`, `family` and `episode_ids`. The five JSON files (`results/`) are the result files that the analysis scripts wrote. In the three JSON files that carried absolute paths of the machine, the path prefixes are replaced by `<repo>` and `<unit>`. No number is changed, so the redaction changes only text and the checksums below are those of the published files.
+
+| File | Size in bytes | SHA-256 |
+|---|---|---|
+| `matched_comparison/score96_timeseries/N1_accel_pure_seed11_score96_timeseries.npz` | 7800758 | `a009fb63348d6e7be0a1ccee81d7f44d193fbe7404801a6dcb19b6b752ce0e8a` |
+| `matched_comparison/score96_timeseries/N1_accel_pure_seed21_score96_timeseries.npz` | 7800158 | `edb061a5dadbf941fccd8eaf032269a52618b4162a344e4b8c3352362df02412` |
+| `matched_comparison/score96_timeseries/N1_accel_pure_seed41_score96_timeseries.npz` | 7800058 | `5fa496564a83c4fe4081c07dfd6bb05b952cd3ad99bf1cad6e4ec4ff955a12cd` |
+| `matched_comparison/score96_timeseries/N1_accel_pure_seed51_score96_timeseries.npz` | 7800419 | `dbb00306035747d459618f155214d2d00e74a15215543460eef1d7b72760e0a0` |
+| `matched_comparison/score96_timeseries/N1_accel_pure_seed61_score96_timeseries.npz` | 7803161 | `68bcf336b9436c41b5634debdd01a631493e9b03c4f41cebfe9a0ebdf54e5b70` |
+| `matched_comparison/score96_timeseries/N1_accel_pure_seed71_score96_timeseries.npz` | 7799758 | `bbed277364a8c9bda458f9cb25b58e0255146f673ac4ac23cc3c91a4308f734a` |
+| `matched_comparison/score96_timeseries/N4_direct_plain_w362_seed11_score96_timeseries.npz` | 7816099 | `5fedc1330e66faf9c438f8db0986aae67deab7bd31da94fb37b6a86628032590` |
+| `matched_comparison/score96_timeseries/N4_direct_plain_w362_seed21_score96_timeseries.npz` | 7810695 | `46517c5b80f0efef1e34fa7a8fbe639d14f3d5fb290d085350bbf926aba03210` |
+| `matched_comparison/score96_timeseries/N4_direct_plain_w362_seed41_score96_timeseries.npz` | 7814528 | `d68dd65685d0c7139042e20edb340b27c2f6c69930535ac22cc72fcd2ad0bc93` |
+| `matched_comparison/score96_timeseries/N4_direct_plain_w362_seed51_score96_timeseries.npz` | 7812306 | `23c274a8835aeae12ffd3a54da66cfb93ce366c1687acfbd5bbb6001a4434554` |
+| `matched_comparison/score96_timeseries/N4_direct_plain_w362_seed61_score96_timeseries.npz` | 7812025 | `fcb1dc3ca3ca61c734c3fcc1b68b32fa3f99e3aef236b1a188ff83a5e57160be` |
+| `matched_comparison/score96_timeseries/N4_direct_plain_w362_seed71_score96_timeseries.npz` | 7816807 | `f99ba6981fbf76a67231c76e31d6692cd533d195c9073ca0503507137b419e5f` |
+| `matched_comparison/results/ab_b_table_b1.json` | 11209 | `b60c1642d215df777e1fc3d746e750a4a0bdb0ee502f07a9d990de27be76ace2` |
+| `matched_comparison/results/analysis_b1_exit_channels.json` | 14764 | `af4550f251c48fdff78f08233d9f9e31a32920afbee086cca7d448417f6f610d` |
+| `matched_comparison/results/analysis_b1_results.json` | 49649 | `f5e391c4b3fce692924dc45acae69a2f49f1e02ebae4ff761c68cbb9d0a96031` |
+| `matched_comparison/results/analysis_posthoc_edge_baseline_results.json` | 591299 | `cbb7c51cd33b984855bf09eb6ee17511b048c4b2bb214aca187ce5ee19ae62c1` |
+| `matched_comparison/results/velocity_structure_results.json` | 3511 | `02a63e1e27fa3901971b74d4d5ba0c45731d423c5757ca5771b8bf585783290e` |
+
+`MANIFEST.sha256` lists these checksums too. To check a download, run `sha256sum -c MANIFEST.sha256` in this folder.

@@ -1,0 +1,164 @@
+{
+ "position_increment": [
+  {
+   "state": "x",
+   "mass_kg": 1.0,
+   "trapezoid": 0.0012677615321816358,
+   "euler_new_velocity": 0.04549608921320496
+  },
+  {
+   "state": "x",
+   "mass_kg": 6.0,
+   "trapezoid": 0.002739232654782112,
+   "euler_new_velocity": 0.07513718980589545
+  },
+  {
+   "state": "x",
+   "mass_kg": 11.0,
+   "trapezoid": 0.003055119098188814,
+   "euler_new_velocity": 0.06923972123495697
+  },
+  {
+   "state": "x",
+   "mass_kg": 15.0,
+   "trapezoid": 0.0031719534327686177,
+   "euler_new_velocity": 0.06729732436020955
+  },
+  {
+   "state": "y",
+   "mass_kg": 1.0,
+   "trapezoid": 0.0011953079846559632,
+   "euler_new_velocity": 0.05667268836145419
+  },
+  {
+   "state": "y",
+   "mass_kg": 6.0,
+   "trapezoid": 0.0016190648128708567,
+   "euler_new_velocity": 0.064136049047405
+  },
+  {
+   "state": "y",
+   "mass_kg": 11.0,
+   "trapezoid": 0.002022345414014132,
+   "euler_new_velocity": 0.06069427360572378
+  },
+  {
+   "state": "y",
+   "mass_kg": 15.0,
+   "trapezoid": 0.0022516534873086524,
+   "euler_new_velocity": 0.06009406009675667
+  },
+  {
+   "state": "l",
+   "mass_kg": 1.0,
+   "trapezoid": 0.0063593081283500625,
+   "euler_new_velocity": 0.08708299736198336
+  },
+  {
+   "state": "l",
+   "mass_kg": 6.0,
+   "trapezoid": 0.0010496817103638168,
+   "euler_new_velocity": 0.04347727032038012
+  },
+  {
+   "state": "l",
+   "mass_kg": 11.0,
+   "trapezoid": 0.0008787421130110405,
+   "euler_new_velocity": 0.03894558356029258
+  },
+  {
+   "state": "l",
+   "mass_kg": 15.0,
+   "trapezoid": 0.0005550904375338652,
+   "euler_new_velocity": 0.02802055539155126
+  }
+ ],
+ "bands": [
+  {
+   "channel": "xdot",
+   "band_hz": [
+    0,
+    0.5
+   ],
+   "error_share_percent": 2.6425506319367793,
+   "n1_power_over_reference": 0.8528838713771038,
+   "reference_power_share_percent": 30.205075617958798
+  },
+  {
+   "channel": "xdot",
+   "band_hz": [
+    0.5,
+    1
+   ],
+   "error_share_percent": 39.57058491198794,
+   "n1_power_over_reference": 0.5852848950837525,
+   "reference_power_share_percent": 46.884913364022296
+  },
+  {
+   "channel": "xdot",
+   "band_hz": [
+    1,
+    2
+   ],
+   "error_share_percent": 50.998506422277096,
+   "n1_power_over_reference": 0.17076613152522369,
+   "reference_power_share_percent": 19.39295542917645
+  },
+  {
+   "channel": "xdot",
+   "band_hz": [
+    2,
+    25.01
+   ],
+   "error_share_percent": 6.7883580337981995,
+   "n1_power_over_reference": 0.179983098110046,
+   "reference_power_share_percent": 3.5170555888424895
+  },
+  {
+   "channel": "ydot",
+   "band_hz": [
+    0,
+    0.5
+   ],
+   "error_share_percent": 3.441864077703733,
+   "n1_power_over_reference": 0.8372380200008633,
+   "reference_power_share_percent": 36.9944403085375
+  },
+  {
+   "channel": "ydot",
+   "band_hz": [
+    0.5,
+    1
+   ],
+   "error_share_percent": 73.03104206828574,
+   "n1_power_over_reference": 0.2680252334122389,
+   "reference_power_share_percent": 49.01068100316171
+  },
+  {
+   "channel": "ydot",
+   "band_hz": [
+    1,
+    2
+   ],
+   "error_share_percent": 17.629048079045603,
+   "n1_power_over_reference": 0.22623162401118868,
+   "reference_power_share_percent": 10.14596548005707
+  },
+  {
+   "channel": "ydot",
+   "band_hz": [
+    2,
+    25.01
+   ],
+   "error_share_percent": 5.898045774964907,
+   "n1_power_over_reference": 0.17225013512947968,
+   "reference_power_share_percent": 3.8489132082437383
+  }
+ ],
+ "summary_percent": {
+  "trapezoid_min": 0.05550904375338652,
+  "trapezoid_max": 0.6359308128350063,
+  "euler_min": 2.802055539155126,
+  "euler_max": 8.708299736198336
+ }
+}

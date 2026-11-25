@@ -1,0 +1,721 @@
+{
+ "claim_status": "none",
+ "tier": "development",
+ "split": "devB_in (already scored; stored outputs only)",
+ "counts_only": true,
+ "frozen_code": "neural-control 5d493fb, camp_0170_metrics_lib.first_exit_box (relax 0.0, strict inequalities, whole 20 s rollout, finite rollouts only)",
+ "bounded_channels": [
+  "x",
+  "x_dot",
+  "y",
+  "y_dot",
+  "l",
+  "l_dot"
+ ],
+ "bounds": {
+  "x": [
+   100.0,
+   1070.0
+  ],
+  "x_dot": [
+   -120.0,
+   120.0
+  ],
+  "y": [
+   80.0,
+   550.0
+  ],
+  "y_dot": [
+   -120.0,
+   120.0
+  ],
+  "l": [
+   150.0,
+   700.0
+  ],
+  "l_dot": [
+   -60.0,
+   60.0
+  ]
+ },
+ "pooled": {
+  "N1": {
+   "exit_episodes": 21,
+   "episodes_total": 1536,
+   "multi_channel_episodes": 0,
+   "ch_any": {
+    "x": 1,
+    "x_dot": 0,
+    "y": 0,
+    "y_dot": 0,
+    "l": 20,
+    "l_dot": 0
+   },
+   "ch_side": {
+    "x:low": 1,
+    "x:high": 0,
+    "x_dot:low": 0,
+    "x_dot:high": 0,
+    "y:low": 0,
+    "y:high": 0,
+    "y_dot:low": 0,
+    "y_dot:high": 0,
+    "l:low": 8,
+    "l:high": 12,
+    "l_dot:low": 0,
+    "l_dot:high": 0
+   },
+   "first_channel": {
+    "x": 1,
+    "x_dot": 0,
+    "y": 0,
+    "y_dot": 0,
+    "l": 20,
+    "l_dot": 0
+   },
+   "first_channel_tie_episodes": 0,
+   "n_channels_hist": {
+    "1": 21
+   },
+   "nonfinite_episodes": 0,
+   "E3_sum_from_analysis_b1_results": 21,
+   "reproduces_E3": true,
+   "reproduces_E3_per_seed": true,
+   "channel_union_check_any_exit_channel_le_exit_episodes": true
+  },
+  "N4": {
+   "exit_episodes": 102,
+   "episodes_total": 1536,
+   "multi_channel_episodes": 0,
+   "ch_any": {
+    "x": 4,
+    "x_dot": 0,
+    "y": 12,
+    "y_dot": 0,
+    "l": 86,
+    "l_dot": 0
+   },
+   "ch_side": {
+    "x:low": 3,
+    "x:high": 1,
+    "x_dot:low": 0,
+    "x_dot:high": 0,
+    "y:low": 5,
+    "y:high": 7,
+    "y_dot:low": 0,
+    "y_dot:high": 0,
+    "l:low": 41,
+    "l:high": 45,
+    "l_dot:low": 0,
+    "l_dot:high": 0
+   },
+   "first_channel": {
+    "x": 4,
+    "x_dot": 0,
+    "y": 12,
+    "y_dot": 0,
+    "l": 86,
+    "l_dot": 0
+   },
+   "first_channel_tie_episodes": 0,
+   "n_channels_hist": {
+    "1": 102
+   },
+   "nonfinite_episodes": 0,
+   "E3_sum_from_analysis_b1_results": 102,
+   "reproduces_E3": true,
+   "reproduces_E3_per_seed": true,
+   "channel_union_check_any_exit_channel_le_exit_episodes": true
+  }
+ },
+ "cells": {
+  "N1_seed11": {
+   "arm": "N1",
+   "seed": 11,
+   "n_episodes": 256,
+   "n_nonfinite_episodes": 0,
+   "exits20_record": 3,
+   "exit_episodes": 3,
+   "ch_any": {
+    "x": 1,
+    "x_dot": 0,
+    "y": 0,
+    "y_dot": 0,
+    "l": 2,
+    "l_dot": 0
+   },
+   "ch_side": {
+    "x:low": 1,
+    "x:high": 0,
+    "x_dot:low": 0,
+    "x_dot:high": 0,
+    "y:low": 0,
+    "y:high": 0,
+    "y_dot:low": 0,
+    "y_dot:high": 0,
+    "l:low": 0,
+    "l:high": 2,
+    "l_dot:low": 0,
+    "l_dot:high": 0
+   },
+   "multi_channel_episodes": 0,
+   "first_channel": {
+    "x": 1,
+    "x_dot": 0,
+    "y": 0,
+    "y_dot": 0,
+    "l": 2,
+    "l_dot": 0
+   },
+   "first_channel_tie_episodes": 0,
+   "first_channel_ties": [],
+   "n_channels_hist": {
+    "1": 3
+   },
+   "nonfinite_with_exit_excluded": 0,
+   "exit_sample_first_min": 444,
+   "reproduces_record_exits20": true,
+   "record_sha256": "8fb5b68a5317134b7be41d0309d5b2c5e94e2308c2ef92fe18fd45476e3fd0ea",
+   "npz_sha256": "b877bc690be5d189bb27e680c080bf4b7e302692d77dea263f325825655d1656"
+  },
+  "N1_seed21": {
+   "arm": "N1",
+   "seed": 21,
+   "n_episodes": 256,
+   "n_nonfinite_episodes": 0,
+   "exits20_record": 8,
+   "exit_episodes": 8,
+   "ch_any": {
+    "x": 0,
+    "x_dot": 0,
+    "y": 0,
+    "y_dot": 0,
+    "l": 8,
+    "l_dot": 0
+   },
+   "ch_side": {
+    "x:low": 0,
+    "x:high": 0,
+    "x_dot:low": 0,
+    "x_dot:high": 0,
+    "y:low": 0,
+    "y:high": 0,
+    "y_dot:low": 0,
+    "y_dot:high": 0,
+    "l:low": 3,
+    "l:high": 5,
+    "l_dot:low": 0,
+    "l_dot:high": 0
+   },
+   "multi_channel_episodes": 0,
+   "first_channel": {
+    "x": 0,
+    "x_dot": 0,
+    "y": 0,
+    "y_dot": 0,
+    "l": 8,
+    "l_dot": 0
+   },
+   "first_channel_tie_episodes": 0,
+   "first_channel_ties": [],
+   "n_channels_hist": {
+    "1": 8
+   },
+   "nonfinite_with_exit_excluded": 0,
+   "exit_sample_first_min": 207,
+   "reproduces_record_exits20": true,
+   "record_sha256": "96bd551f35452cb9bb4fb370ae81f9817fdebfb17422fc968c4cbe26bb8d1133",
+   "npz_sha256": "cc1b29db0bd33454d2e50ded890b55b9810d1079f6d69431378d290850939716"
+  },
+  "N1_seed41": {
+   "arm": "N1",
+   "seed": 41,
+   "n_episodes": 256,
+   "n_nonfinite_episodes": 0,
+   "exits20_record": 5,
+   "exit_episodes": 5,
+   "ch_any": {
+    "x": 0,
+    "x_dot": 0,
+    "y": 0,
+    "y_dot": 0,
+    "l": 5,
+    "l_dot": 0
+   },
+   "ch_side": {
+    "x:low": 0,
+    "x:high": 0,
+    "x_dot:low": 0,
+    "x_dot:high": 0,
+    "y:low": 0,
+    "y:high": 0,
+    "y_dot:low": 0,
+    "y_dot:high": 0,
+    "l:low": 3,
+    "l:high": 2,
+    "l_dot:low": 0,
+    "l_dot:high": 0
+   },
+   "multi_channel_episodes": 0,
+   "first_channel": {
+    "x": 0,
+    "x_dot": 0,
+    "y": 0,
+    "y_dot": 0,
+    "l": 5,
+    "l_dot": 0
+   },
+   "first_channel_tie_episodes": 0,
+   "first_channel_ties": [],
+   "n_channels_hist": {
+    "1": 5
+   },
+   "nonfinite_with_exit_excluded": 0,
+   "exit_sample_first_min": 158,
+   "reproduces_record_exits20": true,
+   "record_sha256": "6320082e5d26343dac0fafab3141d18c525a6669852ca825851de4c085bfa679",
+   "npz_sha256": "0a36215c97d14b52ace9a801856ef959cc6a1b63ca81583ce0c062272a1f3d2c"
+  },
+  "N1_seed51": {
+   "arm": "N1",
+   "seed": 51,
+   "n_episodes": 256,
+   "n_nonfinite_episodes": 0,
+   "exits20_record": 1,
+   "exit_episodes": 1,
+   "ch_any": {
+    "x": 0,
+    "x_dot": 0,
+    "y": 0,
+    "y_dot": 0,
+    "l": 1,
+    "l_dot": 0
+   },
+   "ch_side": {
+    "x:low": 0,
+    "x:high": 0,
+    "x_dot:low": 0,
+    "x_dot:high": 0,
+    "y:low": 0,
+    "y:high": 0,
+    "y_dot:low": 0,
+    "y_dot:high": 0,
+    "l:low": 0,
+    "l:high": 1,
+    "l_dot:low": 0,
+    "l_dot:high": 0
+   },
+   "multi_channel_episodes": 0,
+   "first_channel": {
+    "x": 0,
+    "x_dot": 0,
+    "y": 0,
+    "y_dot": 0,
+    "l": 1,
+    "l_dot": 0
+   },
+   "first_channel_tie_episodes": 0,
+   "first_channel_ties": [],
+   "n_channels_hist": {
+    "1": 1
+   },
+   "nonfinite_with_exit_excluded": 0,
+   "exit_sample_first_min": 905,
+   "reproduces_record_exits20": true,
+   "record_sha256": "417d55ec69c46d39829fe010f908a966ba05465cc12ce488e2d760c26da3d380",
+   "npz_sha256": "106c5f3ad8e76223e61a54bdee0ef7c1cc251fdaef9cc0af9863881b9c484fb1"
+  },
+  "N1_seed61": {
+   "arm": "N1",
+   "seed": 61,
+   "n_episodes": 256,
+   "n_nonfinite_episodes": 0,
+   "exits20_record": 0,
+   "exit_episodes": 0,
+   "ch_any": {
+    "x": 0,
+    "x_dot": 0,
+    "y": 0,
+    "y_dot": 0,
+    "l": 0,
+    "l_dot": 0
+   },
+   "ch_side": {
+    "x:low": 0,
+    "x:high": 0,
+    "x_dot:low": 0,
+    "x_dot:high": 0,
+    "y:low": 0,
+    "y:high": 0,
+    "y_dot:low": 0,
+    "y_dot:high": 0,
+    "l:low": 0,
+    "l:high": 0,
+    "l_dot:low": 0,
+    "l_dot:high": 0
+   },
+   "multi_channel_episodes": 0,
+   "first_channel": {
+    "x": 0,
+    "x_dot": 0,
+    "y": 0,
+    "y_dot": 0,
+    "l": 0,
+    "l_dot": 0
+   },
+   "first_channel_tie_episodes": 0,
+   "first_channel_ties": [],
+   "n_channels_hist": {},
+   "nonfinite_with_exit_excluded": 0,
+   "exit_sample_first_min": null,
+   "reproduces_record_exits20": true,
+   "record_sha256": "a3d1510727761291f3613182fe9613bbc9e89d4421f80d6f67e2dc75ebad12f8",
+   "npz_sha256": "e1b36478d40da7cf590d9ebe818ca4b8f0b7d62da07d20f8e6320a06597f7c90"
+  },
+  "N1_seed71": {
+   "arm": "N1",
+   "seed": 71,
+   "n_episodes": 256,
+   "n_nonfinite_episodes": 0,
+   "exits20_record": 4,
+   "exit_episodes": 4,
+   "ch_any": {
+    "x": 0,
+    "x_dot": 0,
+    "y": 0,
+    "y_dot": 0,
+    "l": 4,
+    "l_dot": 0
+   },
+   "ch_side": {
+    "x:low": 0,
+    "x:high": 0,
+    "x_dot:low": 0,
+    "x_dot:high": 0,
+    "y:low": 0,
+    "y:high": 0,
+    "y_dot:low": 0,
+    "y_dot:high": 0,
+    "l:low": 2,
+    "l:high": 2,
+    "l_dot:low": 0,
+    "l_dot:high": 0
+   },
+   "multi_channel_episodes": 0,
+   "first_channel": {
+    "x": 0,
+    "x_dot": 0,
+    "y": 0,
+    "y_dot": 0,
+    "l": 4,
+    "l_dot": 0
+   },
+   "first_channel_tie_episodes": 0,
+   "first_channel_ties": [],
+   "n_channels_hist": {
+    "1": 4
+   },
+   "nonfinite_with_exit_excluded": 0,
+   "exit_sample_first_min": 640,
+   "reproduces_record_exits20": true,
+   "record_sha256": "753046fde15fa23a07a880d79336c4e8e1f2f6e41101ada2588998264c899096",
+   "npz_sha256": "2a11f0c4a18fa60f7751657b3eace6f86f48e4d69c2d06cb9cccda2f2f8cda82"
+  },
+  "N4_seed11": {
+   "arm": "N4",
+   "seed": 11,
+   "n_episodes": 256,
+   "n_nonfinite_episodes": 0,
+   "exits20_record": 26,
+   "exit_episodes": 26,
+   "ch_any": {
+    "x": 2,
+    "x_dot": 0,
+    "y": 5,
+    "y_dot": 0,
+    "l": 19,
+    "l_dot": 0
+   },
+   "ch_side": {
+    "x:low": 2,
+    "x:high": 0,
+    "x_dot:low": 0,
+    "x_dot:high": 0,
+    "y:low": 0,
+    "y:high": 5,
+    "y_dot:low": 0,
+    "y_dot:high": 0,
+    "l:low": 3,
+    "l:high": 16,
+    "l_dot:low": 0,
+    "l_dot:high": 0
+   },
+   "multi_channel_episodes": 0,
+   "first_channel": {
+    "x": 2,
+    "x_dot": 0,
+    "y": 5,
+    "y_dot": 0,
+    "l": 19,
+    "l_dot": 0
+   },
+   "first_channel_tie_episodes": 0,
+   "first_channel_ties": [],
+   "n_channels_hist": {
+    "1": 26
+   },
+   "nonfinite_with_exit_excluded": 0,
+   "exit_sample_first_min": 104,
+   "reproduces_record_exits20": true,
+   "record_sha256": "d0a0e2ee83237256611f5429a2bbb830540e8e87141ba211f5eead50eefa5964",
+   "npz_sha256": "133f3079b3550fc59622f91a51b9519024b8f5332fb82f01bb1a832b275422eb"
+  },
+  "N4_seed21": {
+   "arm": "N4",
+   "seed": 21,
+   "n_episodes": 256,
+   "n_nonfinite_episodes": 0,
+   "exits20_record": 2,
+   "exit_episodes": 2,
+   "ch_any": {
+    "x": 1,
+    "x_dot": 0,
+    "y": 1,
+    "y_dot": 0,
+    "l": 0,
+    "l_dot": 0
+   },
+   "ch_side": {
+    "x:low": 1,
+    "x:high": 0,
+    "x_dot:low": 0,
+    "x_dot:high": 0,
+    "y:low": 1,
+    "y:high": 0,
+    "y_dot:low": 0,
+    "y_dot:high": 0,
+    "l:low": 0,
+    "l:high": 0,
+    "l_dot:low": 0,
+    "l_dot:high": 0
+   },
+   "multi_channel_episodes": 0,
+   "first_channel": {
+    "x": 1,
+    "x_dot": 0,
+    "y": 1,
+    "y_dot": 0,
+    "l": 0,
+    "l_dot": 0
+   },
+   "first_channel_tie_episodes": 0,
+   "first_channel_ties": [],
+   "n_channels_hist": {
+    "1": 2
+   },
+   "nonfinite_with_exit_excluded": 0,
+   "exit_sample_first_min": 430,
+   "reproduces_record_exits20": true,
+   "record_sha256": "3077266333cec28c3df8359d22201bcbb8fa1a5c26346066bf6d5c96a1861e9b",
+   "npz_sha256": "c48e1c69c319cbbb6a1a340e782bfa16b2c0e89f744d6d38a0091676e2101a00"
+  },
+  "N4_seed41": {
+   "arm": "N4",
+   "seed": 41,
+   "n_episodes": 256,
+   "n_nonfinite_episodes": 0,
+   "exits20_record": 24,
+   "exit_episodes": 24,
+   "ch_any": {
+    "x": 0,
+    "x_dot": 0,
+    "y": 2,
+    "y_dot": 0,
+    "l": 22,
+    "l_dot": 0
+   },
+   "ch_side": {
+    "x:low": 0,
+    "x:high": 0,
+    "x_dot:low": 0,
+    "x_dot:high": 0,
+    "y:low": 0,
+    "y:high": 2,
+    "y_dot:low": 0,
+    "y_dot:high": 0,
+    "l:low": 14,
+    "l:high": 8,
+    "l_dot:low": 0,
+    "l_dot:high": 0
+   },
+   "multi_channel_episodes": 0,
+   "first_channel": {
+    "x": 0,
+    "x_dot": 0,
+    "y": 2,
+    "y_dot": 0,
+    "l": 22,
+    "l_dot": 0
+   },
+   "first_channel_tie_episodes": 0,
+   "first_channel_ties": [],
+   "n_channels_hist": {
+    "1": 24
+   },
+   "nonfinite_with_exit_excluded": 0,
+   "exit_sample_first_min": 36,
+   "reproduces_record_exits20": true,
+   "record_sha256": "284b32bb65f5e4453d34e672be9467e36f457e055590ce3fdc8ab089ae9b3917",
+   "npz_sha256": "f42275c61535742fe7f38ed38637709654dee6379c2ff846584b08d18b249d4e"
+  },
+  "N4_seed51": {
+   "arm": "N4",
+   "seed": 51,
+   "n_episodes": 256,
+   "n_nonfinite_episodes": 0,
+   "exits20_record": 13,
+   "exit_episodes": 13,
+   "ch_any": {
+    "x": 0,
+    "x_dot": 0,
+    "y": 0,
+    "y_dot": 0,
+    "l": 13,
+    "l_dot": 0
+   },
+   "ch_side": {
+    "x:low": 0,
+    "x:high": 0,
+    "x_dot:low": 0,
+    "x_dot:high": 0,
+    "y:low": 0,
+    "y:high": 0,
+    "y_dot:low": 0,
+    "y_dot:high": 0,
+    "l:low": 4,
+    "l:high": 9,
+    "l_dot:low": 0,
+    "l_dot:high": 0
+   },
+   "multi_channel_episodes": 0,
+   "first_channel": {
+    "x": 0,
+    "x_dot": 0,
+    "y": 0,
+    "y_dot": 0,
+    "l": 13,
+    "l_dot": 0
+   },
+   "first_channel_tie_episodes": 0,
+   "first_channel_ties": [],
+   "n_channels_hist": {
+    "1": 13
+   },
+   "nonfinite_with_exit_excluded": 0,
+   "exit_sample_first_min": 67,
+   "reproduces_record_exits20": true,
+   "record_sha256": "1936ea7db6ce166ba8e376364cfb5b683222538fc379fa0f2c41f8e784ab2b62",
+   "npz_sha256": "23ad70d1ee8d7e1567f8b2786b60d4831110e3c2f892afb811ec0c7b31dc4ec0"
+  },
+  "N4_seed61": {
+   "arm": "N4",
+   "seed": 61,
+   "n_episodes": 256,
+   "n_nonfinite_episodes": 0,
+   "exits20_record": 24,
+   "exit_episodes": 24,
+   "ch_any": {
+    "x": 0,
+    "x_dot": 0,
+    "y": 2,
+    "y_dot": 0,
+    "l": 22,
+    "l_dot": 0
+   },
+   "ch_side": {
+    "x:low": 0,
+    "x:high": 0,
+    "x_dot:low": 0,
+    "x_dot:high": 0,
+    "y:low": 2,
+    "y:high": 0,
+    "y_dot:low": 0,
+    "y_dot:high": 0,
+    "l:low": 10,
+    "l:high": 12,
+    "l_dot:low": 0,
+    "l_dot:high": 0
+   },
+   "multi_channel_episodes": 0,
+   "first_channel": {
+    "x": 0,
+    "x_dot": 0,
+    "y": 2,
+    "y_dot": 0,
+    "l": 22,
+    "l_dot": 0
+   },
+   "first_channel_tie_episodes": 0,
+   "first_channel_ties": [],
+   "n_channels_hist": {
+    "1": 24
+   },
+   "nonfinite_with_exit_excluded": 0,
+   "exit_sample_first_min": 55,
+   "reproduces_record_exits20": true,
+   "record_sha256": "c70f18db6bab73b9ee63c025c771836ab17f7510b1b50b75ac022fa57d991aab",
+   "npz_sha256": "f0cb74a3bdfd746566e8f59db3e5d061431f5482874f5d241dbec75f8a4bbe94"
+  },
+  "N4_seed71": {
+   "arm": "N4",
+   "seed": 71,
+   "n_episodes": 256,
+   "n_nonfinite_episodes": 0,
+   "exits20_record": 13,
+   "exit_episodes": 13,
+   "ch_any": {
+    "x": 1,
+    "x_dot": 0,
+    "y": 2,
+    "y_dot": 0,
+    "l": 10,
+    "l_dot": 0
+   },
+   "ch_side": {
+    "x:low": 0,
+    "x:high": 1,
+    "x_dot:low": 0,
+    "x_dot:high": 0,
+    "y:low": 2,
+    "y:high": 0,
+    "y_dot:low": 0,
+    "y_dot:high": 0,
+    "l:low": 10,
+    "l:high": 0,
+    "l_dot:low": 0,
+    "l_dot:high": 0
+   },
+   "multi_channel_episodes": 0,
+   "first_channel": {
+    "x": 1,
+    "x_dot": 0,
+    "y": 2,
+    "y_dot": 0,
+    "l": 10,
+    "l_dot": 0
+   },
+   "first_channel_tie_episodes": 0,
+   "first_channel_ties": [],
+   "n_channels_hist": {
+    "1": 13
+   },
+   "nonfinite_with_exit_excluded": 0,
+   "exit_sample_first_min": 31,
+   "reproduces_record_exits20": true,
+   "record_sha256": "44a2c48261c308430989ccfc9a72fdbc50a4d4cba3cb748d44f5f3dfc0a3b40e",
+   "npz_sha256": "b9ee597a5393995bb3fa2d759d78b2758d239d5075839d7e2077c5b55f6e7e2b"
+  }
+ },
+ "anomalies": [],
+ "cell_sha256_note": "record_sha256 and npz_sha256 are those of the receipt files read"
+}

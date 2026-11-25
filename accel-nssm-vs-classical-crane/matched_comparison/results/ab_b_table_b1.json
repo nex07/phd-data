@@ -1,0 +1,362 @@
+{
+ "meta": {
+  "claim_status": "none",
+  "complete": true,
+  "expected_clip_norm": 107.0,
+  "recipe_sha256": [
+   "44c1a61cd7e4941a9f8eb1a01f4a2cce42d58b64368e94e8b86e7ec0ae7d4224"
+  ],
+  "x_std_record": "<repo>/artifact-store/campaigns/CAMP-0186/current/arms/N1_accel_pure_seed11/N1_accel_pure_record.json",
+  "x_std_source": [
+   "stage-1 record train_fit_x_std"
+  ]
+ },
+ "provenance": {
+  "accel": {
+   "11": {
+    "clip_norm": 107.0,
+    "nrmse20_per_state": [
+     0.04481167462535775,
+     0.4630111359840613,
+     0.13127458633739408,
+     0.14633163141387448,
+     0.09430771752464562,
+     0.4931304186359883,
+     0.1580197969163989,
+     0.15928661196247462,
+     0.030130449898447657,
+     0.179214094569166
+    ],
+    "recipe_sha256": "44c1a61cd7e4941a9f8eb1a01f4a2cce42d58b64368e94e8b86e7ec0ae7d4224",
+    "record": "<repo>/artifact-store/campaigns/CAMP-0194/runs/camp_0194_000001/attempts/1/raw/job/cells/N1_seed11__combo-44c1a61c/attempt_1/N1_accel_pure_seed11__combo-44c1a61c/N1_accel_pure_seed11_record.json",
+    "shape": "run",
+    "x_std_source": "stage-1 record train_fit_x_std"
+   },
+   "21": {
+    "clip_norm": 107.0,
+    "nrmse20_per_state": [
+     0.03833920531995785,
+     0.4695118461252696,
+     0.14118440670643603,
+     0.1428928009441081,
+     0.09329302895642708,
+     0.5239526633717966,
+     0.1773318911123723,
+     0.17864059402981167,
+     0.031748938698227334,
+     0.186336318024017
+    ],
+    "recipe_sha256": "44c1a61cd7e4941a9f8eb1a01f4a2cce42d58b64368e94e8b86e7ec0ae7d4224",
+    "record": "<repo>/artifact-store/campaigns/CAMP-0194/runs/camp_0194_000001/attempts/1/raw/job/cells/N1_seed21__combo-44c1a61c/attempt_1/N1_accel_pure_seed21__combo-44c1a61c/N1_accel_pure_seed21_record.json",
+    "shape": "run",
+    "x_std_source": "stage-1 record train_fit_x_std"
+   },
+   "41": {
+    "clip_norm": 107.0,
+    "nrmse20_per_state": [
+     0.05139301133495662,
+     0.48219448600233183,
+     0.1314309662484901,
+     0.14292941694680358,
+     0.09921983193839617,
+     0.5137872389299849,
+     0.17950870903185123,
+     0.18500183550118668,
+     0.03132311257720685,
+     0.18126187993591353
+    ],
+    "recipe_sha256": "44c1a61cd7e4941a9f8eb1a01f4a2cce42d58b64368e94e8b86e7ec0ae7d4224",
+    "record": "<repo>/artifact-store/campaigns/CAMP-0194/runs/camp_0194_000001/attempts/1/raw/job/cells/N1_seed41__combo-44c1a61c/attempt_1/N1_accel_pure_seed41__combo-44c1a61c/N1_accel_pure_seed41_record.json",
+    "shape": "run",
+    "x_std_source": "stage-1 record train_fit_x_std"
+   },
+   "51": {
+    "clip_norm": 107.0,
+    "nrmse20_per_state": [
+     0.05312243951177657,
+     0.4833510949925049,
+     0.14229436909853344,
+     0.13557995208542417,
+     0.0884449793404197,
+     0.5331654520326095,
+     0.20636280304019547,
+     0.1997811430349224,
+     0.03677203248737698,
+     0.189080602857053
+    ],
+    "recipe_sha256": "44c1a61cd7e4941a9f8eb1a01f4a2cce42d58b64368e94e8b86e7ec0ae7d4224",
+    "record": "<repo>/artifact-store/campaigns/CAMP-0194/runs/camp_0194_000001/attempts/1/raw/job/cells/N1_seed51__combo-44c1a61c/attempt_1/N1_accel_pure_seed51__combo-44c1a61c/N1_accel_pure_seed51_record.json",
+    "shape": "run",
+    "x_std_source": "stage-1 record train_fit_x_std"
+   },
+   "61": {
+    "clip_norm": 107.0,
+    "nrmse20_per_state": [
+     0.046757995643929,
+     0.5030462592335364,
+     0.1345496786195262,
+     0.15838059173076735,
+     0.09667618752408802,
+     0.5365438782721212,
+     0.15819680738901162,
+     0.18917414901236637,
+     0.03808932370246846,
+     0.18271867377680395
+    ],
+    "recipe_sha256": "44c1a61cd7e4941a9f8eb1a01f4a2cce42d58b64368e94e8b86e7ec0ae7d4224",
+    "record": "<repo>/artifact-store/campaigns/CAMP-0194/runs/camp_0194_000001/attempts/1/raw/job/cells/N1_seed61__combo-44c1a61c/attempt_1/N1_accel_pure_seed61__combo-44c1a61c/N1_accel_pure_seed61_record.json",
+    "shape": "run",
+    "x_std_source": "stage-1 record train_fit_x_std"
+   },
+   "71": {
+    "clip_norm": 107.0,
+    "nrmse20_per_state": [
+     0.04535939423772145,
+     0.4869362530200092,
+     0.13052188985898067,
+     0.1403050273602846,
+     0.09238304499104424,
+     0.5302219508614281,
+     0.18758958500445655,
+     0.1822070879656304,
+     0.03239182475207663,
+     0.18594178722675272
+    ],
+    "recipe_sha256": "44c1a61cd7e4941a9f8eb1a01f4a2cce42d58b64368e94e8b86e7ec0ae7d4224",
+    "record": "<repo>/artifact-store/campaigns/CAMP-0194/runs/camp_0194_000001/attempts/1/raw/job/cells/N1_seed71__combo-44c1a61c/attempt_1/N1_accel_pure_seed71__combo-44c1a61c/N1_accel_pure_seed71_record.json",
+    "shape": "run",
+    "x_std_source": "stage-1 record train_fit_x_std"
+   }
+  },
+  "direct": {
+   "11": {
+    "clip_norm": 107.0,
+    "nrmse20_per_state": [
+     0.09931372060745428,
+     0.21409417439735814,
+     0.20120441355024987,
+     0.24521533615567295,
+     0.2542134860320814,
+     0.2297017484385428,
+     0.2932722569888935,
+     0.3176706041573001,
+     0.19100812192956645,
+     0.1490417717197604
+    ],
+    "recipe_sha256": "44c1a61cd7e4941a9f8eb1a01f4a2cce42d58b64368e94e8b86e7ec0ae7d4224",
+    "record": "<repo>/artifact-store/campaigns/CAMP-0194/runs/camp_0194_000001/attempts/1/raw/job/cells/N4_seed11__combo-44c1a61c/attempt_1/N4_direct_plain_w362_seed11__combo-44c1a61c/N4_direct_plain_w362_seed11_record.json",
+    "shape": "run",
+    "x_std_source": "stage-1 record train_fit_x_std"
+   },
+   "21": {
+    "clip_norm": 107.0,
+    "nrmse20_per_state": [
+     0.07896302449264953,
+     0.18059030332554118,
+     0.19094070372801042,
+     0.2358318771980116,
+     0.0927296468488607,
+     0.1838344611575245,
+     0.23730750472149312,
+     0.27635891838630056,
+     0.07708474812763287,
+     0.1379784669217609
+    ],
+    "recipe_sha256": "44c1a61cd7e4941a9f8eb1a01f4a2cce42d58b64368e94e8b86e7ec0ae7d4224",
+    "record": "<repo>/artifact-store/campaigns/CAMP-0194/runs/camp_0194_000001/attempts/1/raw/job/cells/N4_seed21__combo-44c1a61c/attempt_1/N4_direct_plain_w362_seed21__combo-44c1a61c/N4_direct_plain_w362_seed21_record.json",
+    "shape": "run",
+    "x_std_source": "stage-1 record train_fit_x_std"
+   },
+   "41": {
+    "clip_norm": 107.0,
+    "nrmse20_per_state": [
+     0.06740999516615129,
+     0.22666510572909346,
+     0.2048081165215579,
+     0.25118863003126235,
+     0.20635148330130768,
+     0.23463731088449227,
+     0.2788158858232305,
+     0.318455258266913,
+     0.1119724668672929,
+     0.15314025807450954
+    ],
+    "recipe_sha256": "44c1a61cd7e4941a9f8eb1a01f4a2cce42d58b64368e94e8b86e7ec0ae7d4224",
+    "record": "<repo>/artifact-store/campaigns/CAMP-0194/runs/camp_0194_000001/attempts/1/raw/job/cells/N4_seed41__combo-44c1a61c/attempt_1/N4_direct_plain_w362_seed41__combo-44c1a61c/N4_direct_plain_w362_seed41_record.json",
+    "shape": "run",
+    "x_std_source": "stage-1 record train_fit_x_std"
+   },
+   "51": {
+    "clip_norm": 107.0,
+    "nrmse20_per_state": [
+     0.08793202270795407,
+     0.22101308618265614,
+     0.2142741790810812,
+     0.2434402034753387,
+     0.09632095650346184,
+     0.19732290070036518,
+     0.2466020652640869,
+     0.27177869338144717,
+     0.13373984149185447,
+     0.148698945265397
+    ],
+    "recipe_sha256": "44c1a61cd7e4941a9f8eb1a01f4a2cce42d58b64368e94e8b86e7ec0ae7d4224",
+    "record": "<repo>/artifact-store/campaigns/CAMP-0194/runs/camp_0194_000001/attempts/1/raw/job/cells/N4_seed51__combo-44c1a61c/attempt_1/N4_direct_plain_w362_seed51__combo-44c1a61c/N4_direct_plain_w362_seed51_record.json",
+    "shape": "run",
+    "x_std_source": "stage-1 record train_fit_x_std"
+   },
+   "61": {
+    "clip_norm": 107.0,
+    "nrmse20_per_state": [
+     0.06553165112520161,
+     0.19606319749247025,
+     0.21454984649515899,
+     0.26948535835817633,
+     0.10644397506351824,
+     0.1968852265282096,
+     0.26279311618265727,
+     0.3064576720519826,
+     0.10607650484409889,
+     0.1385217321866769
+    ],
+    "recipe_sha256": "44c1a61cd7e4941a9f8eb1a01f4a2cce42d58b64368e94e8b86e7ec0ae7d4224",
+    "record": "<repo>/artifact-store/campaigns/CAMP-0194/runs/camp_0194_000001/attempts/1/raw/job/cells/N4_seed61__combo-44c1a61c/attempt_1/N4_direct_plain_w362_seed61__combo-44c1a61c/N4_direct_plain_w362_seed61_record.json",
+    "shape": "run",
+    "x_std_source": "stage-1 record train_fit_x_std"
+   },
+   "71": {
+    "clip_norm": 107.0,
+    "nrmse20_per_state": [
+     0.1399386300659065,
+     0.18956952125536433,
+     0.2573030995346707,
+     0.2984203277679533,
+     0.14482837502393728,
+     0.20196124234773896,
+     0.31026359708719103,
+     0.3439060670417998,
+     0.17999075217193863,
+     0.14202931915105918
+    ],
+    "recipe_sha256": "44c1a61cd7e4941a9f8eb1a01f4a2cce42d58b64368e94e8b86e7ec0ae7d4224",
+    "record": "<repo>/artifact-store/campaigns/CAMP-0194/runs/camp_0194_000001/attempts/1/raw/job/cells/N4_seed71__combo-44c1a61c/attempt_1/N4_direct_plain_w362_seed71__combo-44c1a61c/N4_direct_plain_w362_seed71_record.json",
+    "shape": "run",
+    "x_std_source": "stage-1 record train_fit_x_std"
+   }
+  }
+ },
+ "table": {
+  "accel": [
+   {
+    "E1": 0.18995181178678086,
+    "E2": 0.1111897704495326,
+    "E3": 3,
+    "E4": 0.030130449898447657,
+    "nonfinite_episodes": 0,
+    "seed": 11,
+    "unstable": false
+   },
+   {
+    "E1": 0.19832316932884236,
+    "E2": 0.1182940346652599,
+    "E3": 8,
+    "E4": 0.031748938698227334,
+    "nonfinite_episodes": 0,
+    "seed": 21,
+    "unstable": false
+   },
+   {
+    "E1": 0.19980504884471215,
+    "E2": 0.11963528262250911,
+    "E3": 5,
+    "E4": 0.03132311257720685,
+    "nonfinite_episodes": 0,
+    "seed": 41,
+    "unstable": false
+   },
+   {
+    "E1": 0.2067954868480816,
+    "E2": 0.14170979258825964,
+    "E3": 1,
+    "E4": 0.03677203248737698,
+    "nonfinite_episodes": 0,
+    "seed": 51,
+    "unstable": false
+   },
+   {
+    "E1": 0.20441335449046188,
+    "E2": 0.16001789378039494,
+    "E3": 0,
+    "E4": 0.03808932370246846,
+    "nonfinite_episodes": 0,
+    "seed": 61,
+    "unstable": false
+   },
+   {
+    "E1": 0.20138578452783845,
+    "E2": 0.12762033274726425,
+    "E3": 4,
+    "E4": 0.03239182475207663,
+    "nonfinite_episodes": 0,
+    "seed": 71,
+    "unstable": false
+   }
+  ],
+  "direct": [
+   {
+    "E1": 0.219473563397688,
+    "E2": 0.8534512707182182,
+    "E3": 26,
+    "E4": 0.19100812192956645,
+    "nonfinite_episodes": 0,
+    "seed": 11,
+    "unstable": false
+   },
+   {
+    "E1": 0.16916196549077853,
+    "E2": 0.3234215975985439,
+    "E3": 2,
+    "E4": 0.07708474812763287,
+    "nonfinite_episodes": 0,
+    "seed": 21,
+    "unstable": false
+   },
+   {
+    "E1": 0.20534445106658109,
+    "E2": 0.421047918010014,
+    "E3": 24,
+    "E4": 0.1119724668672929,
+    "nonfinite_episodes": 0,
+    "seed": 41,
+    "unstable": false
+   },
+   {
+    "E1": 0.18611228940536428,
+    "E2": 0.5892863118541092,
+    "E3": 13,
+    "E4": 0.13373984149185447,
+    "nonfinite_episodes": 0,
+    "seed": 51,
+    "unstable": false
+   },
+   {
+    "E1": 0.18628082803281507,
+    "E2": 0.3912100608197736,
+    "E3": 24,
+    "E4": 0.10607650484409889,
+    "nonfinite_episodes": 0,
+    "seed": 61,
+    "unstable": false
+   },
+   {
+    "E1": 0.22082109314475598,
+    "E2": 0.7362549560098153,
+    "E3": 13,
+    "E4": 0.17999075217193863,
+    "nonfinite_episodes": 0,
+    "seed": 71,
+    "unstable": false
+   }
+  ]
+ }
+}
